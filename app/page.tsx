@@ -34,7 +34,7 @@ export default function Home() {
                   alt={item.title}
                   src={item.src}
                   fill
-                  priority={false}
+                  priority={true}
                   sizes="(min-width: 300px) 100vw, 100vw"
                 />
            </div>
