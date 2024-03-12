@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
-import booking from "@/public/booking.png";
+
 
 export const metadata: Metadata = {
   title: "Booking.com Clone",
