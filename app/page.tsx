@@ -2,6 +2,7 @@ import SearchForm from "@/components/SearchForm";
 import { trending_data } from "@/data/trending";
 
 import Image from "next/image";
+import { notFound } from "next/navigation";
 
 export default function Home() {
   return (
@@ -25,7 +26,7 @@ export default function Home() {
           </p>
         </div>
         <div className="flex space-x-4 py-5 overflow-x-scroll">
-          {trending_data.map((item) => (
+          {trending_data ? trending_data.map((item) => (
             <div key={item.id} className="space-y-1 shrink-0 cursor-pointer">
            <div className="w-80 h-72  pb-2 relative ">
                 <Image
@@ -42,7 +43,7 @@ export default function Home() {
               <p className="">{item.location}</p>
               <p className="font-light text-sm">{item.description}</p>
             </div>
-          ))}
+          )):notFound()}
         </div>
       </section>
     </main>
