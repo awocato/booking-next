@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Booking.com Clone
 
-## Getting Started
+This project is a clone of the popular travel and accommodation website, Booking.com. The goal of this project is to replicate the functionality and design of Booking.com as closely as possible, providing a similar user experience.
 
-First, run the development server:
+## Technologies Used
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The project is built using a modern tech stack for optimal performance and developer experience:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Next.js**: A popular React framework that enables features such as server-side rendering and generating static websites for React based web applications.
+- **TypeScript**: A statically typed superset of JavaScript that adds optional types to the language, increasing code quality and understandability.
+- **Tailwind CSS**: A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.
+- **Shadcn**: A UI component library that was used to speed up the development process.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Data Collection
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Data for this project is scraped from the actual Booking.com website using the trial version of Oxylabs, a premium proxy service provider. This ensures that the data used in this project is as accurate and up-to-date as possible.
 
-## Learn More
+## Limitations
 
-To learn more about Next.js, take a look at the following resources:
+Due to the limitations of the hosting platform, Vercel, the search functionality does not work in the live version of the project. Vercel limits the execution time of serverless functions to 10 seconds, which is not enough time to perform a search and return the results. We're actively looking for a solution to this issue.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Demo
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+https://github.com/awocato/booking-next/assets/130543366/882142e8-fc9b-411f-8403-e46ab3babd1f
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Contributing
+
+We welcome contributions to this project. Please feel free to submit issues and pull requests.
+
+## License
+
+This project is open source and available under the MIT License.
